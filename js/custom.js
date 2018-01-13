@@ -1,5 +1,5 @@
 $(document).ready(function() {
-	
+
 	$('#fineness').selectric();
 	$('#loan-plans').selectric();
 	$('#discount').selectric();
@@ -23,5 +23,9 @@ $(document).ready(function() {
 	})
 	$('#weight').blur(function() {
 		$('#weight').val(weight + ' г');
+
+		if(weight==undefined || weight != weight){
+			$('#weight').val('');
+		}
 	});
 });
