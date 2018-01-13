@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Brander-test-task</title>
+      <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+      <link href="style/style.css" media="all" rel="stylesheet" type="text/css">
+      <link href="style/selectric.css" media="all" rel="stylesheet" type="text/css">
+      <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href="style/tooltipster.bundle.min.css" />
+      <link rel="stylesheet" type="text/css" href="style/input-range.css" >
+      <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+         crossorigin="anonymous"></script>
+      <script src="https://use.fontawesome.com/18dd9585bc.js"></script>
+      <script src="js/tooltipster.bundle.min.js"></script>
+      <script src="js/jquery.selectric.js"></script>
+   </head>
+   <body>
+      <div class="wrapper">
+         <form action="#" class="loan-details">
+            <div class="row clearfix">
+               <div class="left-column">
+                  <label for="weight">Вес изделия</label>
+               </div>
+               <div>
+                  <input type="text" id="weight" class="input-underline" placeholder="Укажите вес">
+               </div>
+            </div>
+            <div class="row clearfix">
+               <div class="left-column">
+                  <label for="fineness">Проба металла</label>
+               </div>
+               <div class="drp-container underline">
+                  <select id="fineness">
+                     <option>585 проба</option>
+                     <option>750 проба</option>
+                     <option>999 проба</option>
+                  </select>
+               </div>
+            </div>
+            <div class="row clearfix">
+               <div class="left-column switch-container">
+                  <label class='label label-toggle' for='stones-and-inserts'>
+                     <div class='input-toggle'>
+                        <input class='input-checkbox' id='stones-and-inserts' type='checkbox'>
+                        <span class='input-toggle-handle'></span>
+                     </div>
+                     Камни и вставки
+                  </label>
+               </div>
+               <div class="additional-conditions-container">
+                  Окончательная оценочная
+                  стоимость залога может
+                  отличаться от указанной в расчете
+               </div>
+            </div>
+            <div class="row clearfix">
+               <div class="left-column">
+                  <label for="loan-plans">Тарифный план <span class="tooltip" title="Выбрать ПРОСТОЙ тариф - просто!">i</span></label>
+               </div>
+               <div class="drp-container rounded">
+                  <select id="loan-plans">
+                     <option>Простой</option>
+                     <option>Сложный</option>
+                  </select>
+               </div>
+            </div>
+            <div class="row clearfix">
+               <div class="left-column">
+                  <label for="discount">Ваш дисконтный статус</label>
+               </div>
+               <div class="drp-container rounded discount">
+                  <select id="discount">
+                     <option>Без статуса</option>
+                     <option>Со статусом</option>
+                  </select>
+               </div>
+            </div>
+            <div class="row clearfix">
+               <div class="left-column">
+                  <label for="days-range">Срок кредитования
+                  до продления      
+                  </label>
+               </div>
+               <div class="slider-container">
+                  <input type="range" id="days-range" value="1" step="1" min="1" max="31">
+               </div>
+            </div>
+            <div class="row">
+               <button class="overall-submit" type="submit">Рассчитать кредит</button>
+            </div>
+         </form>
+      </div>
+      <script src="js/input-range.js"></script>
+      <script src="js/custom.js"></script>
+   </body>
+</html>
